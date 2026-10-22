@@ -26,18 +26,22 @@ Outputs:
 No build step. Open `index.html` in any browser, or serve the folder with any
 static server (e.g. `npx serve .`).
 
-## Import it into Google AI Studio
+## Use it inside HighLevel AI Studio
 
-AI Studio supports importing a GitHub repository directly into Build mode
-(Google docs: *Build apps in Google AI Studio* → "How can I use GitHub with my apps?"):
+**AI Studio** is HighLevel's built-in app & website builder (enable it under
+HighLevel Labs in your sub-account). In October 2026 AI Studio gained
+**two-way GitHub sync**, which is exactly what this repo is for:
 
-1. Push this folder to a **public** GitHub repository.
-2. Open [Google AI Studio](https://aistudio.google.com) → **Build**.
-3. In the prompt input box, open **Add files (+)** → **Import from GitHub** and
-   select this repository.
-4. AI Studio converts the repo to its runtime format — keep iterating, then
-   deploy from AI Studio. Two-way sync with GitHub is available under
-   **Settings → GitHub**.
+1. In HighLevel, open **AI Studio** and create (or open) a project.
+2. In the project's **settings**, connect your GitHub account.
+3. Link this repository — code now syncs **both ways** between AI Studio and
+   GitHub (with secret scanning on pushes), so edits made here show up in the
+   AI Studio project and vice versa.
+4. From there the calculator can sit inside the client's HighLevel account —
+   wired to the CRM, calendars and workflows like any AI Studio app.
+
+Prefer to iterate outside HighLevel? The same repo opens in any editor or AI
+coding tool; push, and AI Studio pulls the changes in on sync.
 
 ## The math (verified against the deck)
 
